@@ -1,0 +1,68 @@
+<header>
+
+    <div class="logo_information">
+        <a routerLink="/">
+            <img src="assets/images/logo.png" alt="Продажа пенопласта, пенополистирола, сайдинга."
+                 title="ЧП &quot;Сонант&quot; - производство пенопласта в Украине" id="logogo">
+        </a>
+        <div class="flex_menu_lang">
+            <section class="lang_type">
+                <ul class="lang_type_list">
+                    <li>
+                        <a>UA</a>
+                    </li>
+                    <li>
+                        <a>EN</a>
+                    </li>
+                    <li>
+                        <a>RU</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="panel">
+                <div class="inner-block clearfix" >
+                    <div class="mob_menu_close" (click)="removeClass($event)"></div>
+                    <nav id="main-menu" class="left" (click)="removeClass($event)">
+
+                        <div class="mob_lang_list">
+                            <a> UA </a>
+                            <a> EN </a>
+                            <a> RU </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a routerLink="/aboutUs">О компании</a>
+                            </li>
+                            <li>
+                                <a href="">Новости</a>
+                            </li>
+                            <li>
+                                <a routerLink="/catalog">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="">Продажи</a>
+                            </li>
+                            <li>
+                                <a href="">Информация</a>
+                            </li>
+                            <li>
+                                <a href="">Филиалы</a>
+                            </li>
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <label class="cheeseburger_menu" (click)="mobileMenu($event)">
+                        <span class="lines line-1"></span>
+                        <span class="lines line-2"></span>
+                        <span class="lines line-3"></span>
+                    </label>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</header>
